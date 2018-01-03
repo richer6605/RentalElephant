@@ -32,3 +32,5 @@ def getAllGroupFeeds(group_id, access_token, since):
         res = requests.get(url, headers=headers)
         res_json = res.json()
     return feeds
+
+def firstFilter():
