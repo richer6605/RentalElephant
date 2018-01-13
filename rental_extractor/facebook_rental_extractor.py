@@ -35,7 +35,7 @@ def getAllGroupFeeds(group_id, access_token, since):
 
 def rentTypeFilter(feeds):
     feeds_filtered = {
-        "rent-out": [],
+        "rentOut": [],
         "rent": [],
         "sublet": []
     }
@@ -50,5 +50,5 @@ def rentTypeFilter(feeds):
         elif b'\xe8\xbd\x89\xe7\xa7\x9f' in message_bytes:
             feeds_filtered['sublet'].append(feed)
         else:
-            feeds_filtered['rent-out'].append(feed)
+            feeds_filtered['rentOut'].append(feed)
     return feeds_filtered
